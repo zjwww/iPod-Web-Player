@@ -23,4 +23,16 @@
 
 ## 发布边界
 
+## 已发布 HTTPS 验证
+
+- 公开仓库：https://github.com/zjwww/iPod-Web-Player ，Pages：https://zjwww.github.io/iPod-Web-Player/ 。GitHub 识别许可证为 MIT，仓库公开，强制 HTTPS。
+- 构建与部署成功：https://github.com/zjwww/iPod-Web-Player/actions/runs/40316025539 ，首个应用提交为 `e5076571327299cf0aa1f899b2c95ad6131c7899`。
+- 线上 20 个静态资源均返回 HTTP 200，且与提交文件逐字节一致。音频分段返回 206、`Content-Range: bytes 0-43/1058444`，44 字节 WAV 头正确。
+- 原生 Chrome 打开真实 Pages 地址，显示页面已缓存／HTTPS 静态应用，并播放预置音乐；保存截图显示 `0:17`。原生 Edge 在真实 Pages 地址播放至 `0:24`。鼠标沿实际滚轮拖动将选项从 Playlists 移至 Settings，按实际中央键进入了 Settings。
+- 远端文件树未发现 AGENTS、vendor 快照、旧 v0.1.x、work、outputs 或运行记录。
+- 可选 Windows 启动器在测试端口启动，直接以 `audio/wav` 提供歌曲，经自身 Stop 命令停止并报告离线。直接检查与状态工具一样绕过代理、使用 IPv4 及 localhost Host 匹配；未将此冒充完整历史生命周期测试重跑。
+- 已验证缓存就绪和单元级离线范围响应，未宣称完成真实设备断网／锁屏测试。
+
+## 公开文件
+
 公开实现为新编写代码，不包含 Apple 原始／衍生组件、内嵌 Chicago 字体、按键录音、纹理或游戏。仓库及版本原创代码使用 MIT，Noto SC 字体保留完整 OFL 及来源。历史 v0.1.x 和 vendor 快照仅在本地保留；Git 同步前检查白名单，排除各级 AGENTS、运行记录、work／outputs 及 vendor。

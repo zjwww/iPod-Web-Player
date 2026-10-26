@@ -23,4 +23,16 @@ Audio play/context resume run within the user gesture, the test audio is standar
 
 ## Publication boundary
 
+## Published HTTPS verification
+
+- Public repository: https://github.com/zjwww/iPod-Web-Player ; Pages: https://zjwww.github.io/iPod-Web-Player/ . GitHub identifies the license as MIT, the repository is public, and HTTPS is enforced.
+- Build and deployment succeeded: https://github.com/zjwww/iPod-Web-Player/actions/runs/40316025539 . Initial application commit: `e5076571327299cf0aa1f899b2c95ad6131c7899`.
+- All 20 published static files were HTTP 200 and byte-identical to their committed versions. The audio range probe returned 206, `Content-Range: bytes 0-43/1058444`, and the correct 44-byte WAV header.
+- Native Chrome loaded the real Pages URL, showed APP CACHED / HTTPS STATIC WEB APP, and played the included track; the captured screenshot shows `0:17`. Native Edge reached `0:24` on the real Pages URL. Mouse dragging around the actual wheel moved selection from Playlists to Settings; pressing the physical center opened Settings.
+- Remote tree audit found no AGENTS files, vendor snapshots, old v0.1.x releases, work, outputs or runtime files.
+- Optional Windows launcher started on a test port, directly served WAV as `audio/wav`, then stopped with its own Stop command and reported offline. The direct check bypassed proxies and used IPv4/localhost Host matching, as the status helper does. This is not a new run of all historical lifecycle tests.
+- Cache-ready status and unit-level offline range behavior are verified; a real-device network-disconnection/lock-screen test has not been claimed.
+
+## Public files
+
 The public implementation is newly written and includes no original/derived Apple component, embedded Chicago font, click recording, textures or game. Root/version licenses are MIT; the bundled Noto SC font keeps its complete OFL license/provenance. Historical v0.1.x directories and vendor snapshots remain local. The publish allowlist must exclude every AGENTS file, runtime record, work/output artifact and vendor snapshot before Git synchronization.
