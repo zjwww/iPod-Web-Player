@@ -1,0 +1,12 @@
+**/AGENTS.md
+**/AGENTS.override.md
+work/
+outputs/
+vendor/
+versions/v0.1.*/
+LAUNCHER-DIAGNOSIS*.md
+node_modules/
+.runtime/
+*.log
+.DS_Store
+Thumbs.db
