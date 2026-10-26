@@ -2,6 +2,11 @@
 
 [简体中文](CHANGELOG.zh-CN.md)
 
+## Post-release verification — 2026-10-26 (0.2.0)
+
+- User-reported real-device result: Safari on iOS 27.0.1 plays the included test music normally. Device model was not supplied; Home Screen installation, touch-wheel interaction, offline and lock-screen/background playback were not part of this confirmation.
+- Update the current bilingual README verification scope. Preserve the delivered version directory, program/media bytes and release archive; no program version change.
+
 ## 0.2.0 — 2026-10-26
 
 - Add a Pages-ready relative hosted catalog and one original PCM WAV track; play it directly while keeping local imports private.

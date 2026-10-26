@@ -27,7 +27,7 @@ Use **Share → Add to Home Screen** (enable Open as Web App when offered). Nati
 
 The worker saves the shell, catalog and included music under the deployment path; cache names and manifest identity are scoped to that path. Imported music is separate in IndexedDB. Clearing website data can remove music and offline resources; the in-app clear button removes only imports. Ordinary HTTP LAN access can play audio but normally cannot enable service-worker caching.
 
-**Verification scope:** Windows Chrome and Edge playback are checked separately. Mobile portrait/landscape layout and Safari-specific paths have desktop/static checks. Physical iPhone/iPad Safari, Home Screen installation, touch and lock-screen audio still need real-device verification. Viewport simulation is not Safari testing. See versioned `VERIFICATION.md`.
+**Verification scope:** Windows Chrome and Edge playback are checked separately. On **2026-10-26, the user confirmed that the included test music plays normally in Safari on iOS 27.0.1 on a real device**. This is user-reported basic playback verification; the device model was not supplied. Mobile portrait/landscape layout and Safari-specific paths also have desktop/static checks. Home Screen installation, touch-wheel interaction, offline playback and lock-screen/background audio have not been confirmed on that device. Viewport simulation is not Safari testing. The versioned `VERIFICATION.md` preserves the release-time record; this paragraph and the root changelog contain later feedback.
 
 ## Add hosted music
 
