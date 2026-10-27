@@ -1,0 +1,10 @@
+{
+  "title": "First Spin / 转动之间",
+  "source": "Original procedural composition in dist/library.js:createDemo",
+  "license": "MIT",
+  "seconds": 24,
+  "sampleRate": 22050,
+  "channels": 1,
+  "encoding": "16-bit PCM WAV",
+  "sha256": "4150c17e420350ed8683a50213e470d2ddeaa6d04f847fd04313b9b5e2cb7dea"
+}

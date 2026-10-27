@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "tracks": [
+    {
+      "id": "first-spin",
+      "name": "First Spin · 转动之间",
+      "artist": "iPod Web Player",
+      "album": "Original Test Music",
+      "url": "./audio/first-spin.wav",
+      "type": "audio/wav"
+    }
+  ]
+}

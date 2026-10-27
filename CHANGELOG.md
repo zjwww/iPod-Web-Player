@@ -2,6 +2,11 @@
 
 [简体中文](CHANGELOG.zh-CN.md)
 
+## 0.3.1 — 2026-10-27
+
+- Fix Windows/Linux asset-hash differences by storing release text assets with canonical LF endings; verify inventory hashes against Git index bytes before publication.
+- Keep the 0.3.0 appearance and playback behavior. Preserve its directory and initial local ZIP; the first 0.3.0 Pages build was rejected by the integrity check before deployment. Pages publishes 0.3.1.
+
 ## 0.3.0 — 2026-10-27
 
 - Preserve the approved visual presentation with newly authored enclosure/material drawings, curved MENU, battery/transport vectors and procedural grain; retain 0.9 desktop scale, screen ink/type and reflection with immersive overflow guards.

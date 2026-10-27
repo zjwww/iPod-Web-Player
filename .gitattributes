@@ -12,3 +12,5 @@
 *.wav binary
 *.png binary
 *.woff2 binary
+*.svg text eol=lf
+*.txt text eol=lf

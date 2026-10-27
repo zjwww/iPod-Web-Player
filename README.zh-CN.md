@@ -2,13 +2,13 @@
 
 [English](README.md) · [打开播放器](https://zjwww.github.io/iPod-Web-Player/)
 
-独立的学习用途 click wheel 网页音乐播放器。**本项目与 Apple 无关联，未获得其赞助或背书。** 当前版本：**0.3.0 — 2026-10-27**。
+独立的学习用途 click wheel 网页音乐播放器。**本项目与 Apple 无关联，未获得其赞助或背书。** 当前版本：**0.3.1 — 2026-10-27**。
 
 ## 直接使用
 
 打开 **https://zjwww.github.io/iPod-Web-Player/**，点击“播放测试音乐”，或者从设备的“歌曲”菜单选择歌曲。访问托管网页无需 Node.js、PowerShell、账号或 App 安装。用户操作后开始播放。
 
-原创 24 秒测试音乐 **First Spin · 转动之间** 位于 `versions/v0.3.0/dist/audio/first-spin.wav`，使用 22,050 Hz、单声道、16 位 PCM WAV，依 MIT 分发。`tools/prepare-pages.cjs` 从 `dist/library.js:createDemo` 重现该音频，`audio-provenance.json` 记录 SHA-256。不包含商业歌曲或 Apple Music 试听。
+原创 24 秒测试音乐 **First Spin · 转动之间** 位于 `versions/v0.3.1/dist/audio/first-spin.wav`，使用 22,050 Hz、单声道、16 位 PCM WAV，依 MIT 分发。`tools/prepare-pages.cjs` 从 `dist/library.js:createDemo` 重现该音频，`audio-provenance.json` 记录 SHA-256。不包含商业歌曲或 Apple Music 试听。
 
 点击“添加音乐”、浏览器支持时使用“选择文件夹”，或者将文件拖入页面导入自己的音乐。导入文件仅复制到当前浏览器的 IndexedDB，不上传。“清空导入音乐”只移除浏览器副本，保留预置歌曲和原始文件。
 
@@ -27,11 +27,11 @@
 
 worker 按部署路径缓存网页、曲库和预置音乐，缓存名称与 manifest 身份限定在该路径；导入音乐另存于 IndexedDB。清除网站数据会影响曲库和离线资源，播放器内清空按钮仅删除导入项。普通 HTTP 局域网可以基本播放，但通常不能启用 Service Worker。
 
-**验证范围：** 0.3.0 的原生播放核心及测试 WAV 与旧版逐字节一致。用户于 2026-10-26 确认 iOS 27.0.1 真机 Safari 可正常播放 0.2.0 测试音乐；这不等于 0.3.0 已重新完成真机验证。桌面渲染／播放、移动尺寸布局及发布检查见版本内 `VERIFICATION.zh-CN.md`。主屏幕、触摸滚轮、离线、后台及锁屏仍需真机验证，视口模拟不等于 Safari 测试。
+**验证范围：** 0.3.1 的原生播放核心及测试 WAV 与旧版逐字节一致。用户于 2026-10-26 确认 iOS 27.0.1 真机 Safari 可正常播放 0.2.0 测试音乐；这不等于 0.3.1 已重新完成真机验证。桌面渲染／播放、移动尺寸布局及发布检查见版本内 `VERIFICATION.zh-CN.md`。主屏幕、触摸滚轮、离线、后台及锁屏仍需真机验证，视口模拟不等于 Safari 测试。
 
 ## 添加托管音乐
 
-将有权公开分发的音频放入 `versions/v0.3.0/dist/audio/`，在 `dist/tracks.json` 添加条目并保留 `version: 1`：
+将有权公开分发的音频放入 `versions/v0.3.1/dist/audio/`，在 `dist/tracks.json` 添加条目并保留 `version: 1`：
 
 ```json
 {"id":"my-track","name":"我的歌曲","artist":"歌手","album":"测试专辑","url":"./audio/my-track.mp3","type":"audio/mpeg"}
@@ -43,7 +43,7 @@ ID 必须唯一，使用站内相对地址。外部地址和越出播放器目�
 
 ## 可选 Windows 本地启动器
 
-`versions/v0.3.0/Start-Player.cmd` 使用 Windows 已有 PowerShell 5.1 + .NET HttpListener，地址 `http://localhost:8765/v0.3.0/`。不安装组件，后台是普通隐藏进程，不注册 Windows 系统服务。用 Stop-Player.cmd 停止、Status-Player.cmd 查询，关闭启动窗口不会停服。
+`versions/v0.3.1/Start-Player.cmd` 使用 Windows 已有 PowerShell 5.1 + .NET HttpListener，地址 `http://localhost:8765/v0.3.1/`。不安装组件，后台是普通隐藏进程，不注册 Windows 系统服务。用 Stop-Player.cmd 停止、Status-Player.cmd 查询，关闭启动窗口不会停服。
 
 Start-LAN.cmd 使用 **已经安装且位于 PATH 的 Node.js**，端口 8766，对应 Stop-LAN.cmd／Status-LAN.cmd。Node 仅用于可选开发，Pages 访问者不需要，脚本不修改防火墙。
 
@@ -52,10 +52,10 @@ Start-LAN.cmd 使用 **已经安装且位于 PATH 的 Node.js**，端口 8766，
 无需 npm 包或构建时下载。已有 Node 时可运行：
 
 ```sh
-node --test versions/v0.3.0/tests/*.test.cjs
-node versions/v0.3.0/tools/audit-release.cjs --tracked
-node versions/v0.3.0/tools/build-pages.cjs
-node versions/v0.3.0/server.cjs --port 8765
+node --test versions/v0.3.1/tests/*.test.cjs
+node versions/v0.3.1/tools/audit-release.cjs --tracked
+node versions/v0.3.1/tools/build-pages.cjs
+node versions/v0.3.1/server.cjs --port 8765
 ```
 
 固定提交的官方 Actions workflow 检查代码及跟踪白名单，仅复制当前 `dist/` 到 `work/pages-site` 后部署。其他仓库初次配置选择 **Settings → Pages → GitHub Actions**。运行资源兼容仓库子目录，静态托管不探测本地服务健康接口。
@@ -64,6 +64,6 @@ node versions/v0.3.0/server.cjs --port 8765
 
 项目代码、新绘制的 CSS／SVG 材质与按钮、图标、合成按键音和测试音乐使用 **MIT**，见 [LICENSE](LICENSE)。ChicagoKare 从独立 MIT 上游原样取得并附完整许可证，Noto Sans SC 保留独立 **SIL OFL 1.1**。完整来源及修改记录见[第三方说明](THIRD_PARTY_NOTICES.md)和页脚“素材与许可”。
 
-0.3.0 通过新编写的绘图代码及程序纹理保留已确认的机身比例、屏幕字体／颜色、弧形 MENU、滚轮突起光泽及渐隐倒影。公开版未分发 Apple 原始脚本、提取皮肤、SVG 路径、位图纹理、标识或对照运行时。第三方名称及商标不在 MIT 授权范围，本项目不宣称获 Apple 背书。
+0.3.1 通过新编写的绘图代码及程序纹理保留已确认的机身比例、屏幕字体／颜色、弧形 MENU、滚轮突起光泽及渐隐倒影。公开版未分发 Apple 原始脚本、提取皮肤、SVG 路径、位图纹理、标识或对照运行时。第三方名称及商标不在 MIT 授权范围，本项目不宣称获 Apple 背书。
 
-公开的 0.2.0 和 0.3.0 分别保留于独立历史版本目录。早期实验版、已确认的本地参考候选、原始快照、验证记录及带版本号压缩包继续本地保留。项目指引文件不公开。
+公开的 0.2.0、0.3.0 和 0.3.1 分别保留于独立历史版本目录。早期实验版、已确认的本地参考候选、原始快照、验证记录及带版本号压缩包继续本地保留。项目指引文件不公开。
