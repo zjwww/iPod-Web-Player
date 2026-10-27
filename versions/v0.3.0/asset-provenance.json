@@ -1,0 +1,104 @@
+{
+  "version": "0.3.0",
+  "reviewed": "2026-10-27",
+  "visual_reference": "https://music.apple.com/cn/xp",
+  "reference_material_redistributed": false,
+  "assets": [
+    {
+      "path": "dist/appearance/adapter.css",
+      "bytes": 2649,
+      "sha256": "e65932eb438e1152f55e812c79bbc7e6db75cd1dd3d14bbcdba557414876fe6d",
+      "source": "Project-authored CSS/vector/procedural drawing",
+      "license": "MIT",
+      "modification": "Original project asset; no Apple extracted asset data."
+    },
+    {
+      "path": "dist/appearance/ChicagoKare.woff2",
+      "bytes": 9400,
+      "sha256": "3213740318940270dc4e099b15d49b5781bdf6208660aa970daa5c62d24bcdc4",
+      "source": "https://github.com/KingDuane/Chicago-Kare/tree/dca7a9e4f2b971e39cf3a5e8a3f9309d4293d56d",
+      "license": "MIT (upstream repository)",
+      "modification": "None; byte-identical font and full upstream license. Embedded name table includes OFL; retained unchanged."
+    },
+    {
+      "path": "dist/appearance/grain.svg",
+      "bytes": 539,
+      "sha256": "304bbe7f9da1faa7e2e973ada81b77a49164f9037a6007e2d7ba67931306c438",
+      "source": "Project-authored CSS/vector/procedural drawing",
+      "license": "MIT",
+      "modification": "Original project asset; no Apple extracted asset data."
+    },
+    {
+      "path": "dist/appearance/LICENSE-ChicagoKare-MIT.txt",
+      "bytes": 1067,
+      "sha256": "2920e2c708b6f166eb065faecd1cb7494c1fc1df11cddc88ce727710326b2523",
+      "source": "https://github.com/KingDuane/Chicago-Kare/tree/dca7a9e4f2b971e39cf3a5e8a3f9309d4293d56d",
+      "license": "MIT (upstream repository)",
+      "modification": "None; byte-identical font and full upstream license. Embedded name table includes OFL; retained unchanged."
+    },
+    {
+      "path": "dist/appearance/player-artwork.js",
+      "bytes": 1357,
+      "sha256": "5622face351126d71e7435601c82dac241caee007d2e9ebc64b59921d37bd920",
+      "source": "Project-authored CSS/vector/procedural drawing",
+      "license": "MIT",
+      "modification": "Original project asset; no Apple extracted asset data."
+    },
+    {
+      "path": "dist/appearance/player-materials.css",
+      "bytes": 7220,
+      "sha256": "932505b55b540b07ff7ee5bbcff14c302512b6fc80a09cfa54612a58b91f0ab4",
+      "source": "Project-authored CSS/vector/procedural drawing",
+      "license": "MIT",
+      "modification": "Original project asset; no Apple extracted asset data."
+    },
+    {
+      "path": "dist/audio/first-spin.wav",
+      "bytes": 1058444,
+      "sha256": "4150c17e420350ed8683a50213e470d2ddeaa6d04f847fd04313b9b5e2cb7dea",
+      "source": "Project-authored dist/library.js:createDemo; tools/prepare-pages.cjs",
+      "license": "MIT",
+      "modification": "Original project asset; no Apple extracted asset data."
+    },
+    {
+      "path": "dist/fonts/NotoSansSC-Regular.woff2",
+      "bytes": 4192980,
+      "sha256": "89c8ac4608f8702a7139ee1838544f1e0ba28ed7306e847a8689fd4a6b87f6b9",
+      "source": "https://github.com/google/fonts/tree/2894aab31764f10f29c421bdfd2340d3b382d384/ofl/notosanssc",
+      "license": "SIL OFL 1.1",
+      "modification": "Regular 400 WOFF2 conversion; license unchanged. See font-provenance.json."
+    },
+    {
+      "path": "dist/fonts/OFL-NotoSansSC.txt",
+      "bytes": 4388,
+      "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+      "source": "https://github.com/google/fonts/tree/2894aab31764f10f29c421bdfd2340d3b382d384/ofl/notosanssc",
+      "license": "SIL OFL 1.1",
+      "modification": "Regular 400 WOFF2 conversion; license unchanged. See font-provenance.json."
+    },
+    {
+      "path": "dist/icons/icon-192.png",
+      "bytes": 1354,
+      "sha256": "9ecbd160fa34666b7ec1dad87157be4cea4f735b5bcf35e43e78998f3d7b3570",
+      "source": "Project-authored CSS/vector/procedural drawing",
+      "license": "MIT",
+      "modification": "Original project asset; no Apple extracted asset data."
+    },
+    {
+      "path": "dist/icons/icon-512.png",
+      "bytes": 3807,
+      "sha256": "342011a1e716d85b653e7ce7d172abb3d26b7412e578daf1fc723fb1bd53b9c8",
+      "source": "Project-authored CSS/vector/procedural drawing",
+      "license": "MIT",
+      "modification": "Original project asset; no Apple extracted asset data."
+    },
+    {
+      "path": "dist/icons/ipod.svg",
+      "bytes": 538,
+      "sha256": "bb4292843b87a5944b3ccccabc39c815f4125075eef9335552a3df6ac64fe790",
+      "source": "Project-authored CSS/vector/procedural drawing",
+      "license": "MIT",
+      "modification": "Original project asset; no Apple extracted asset data."
+    }
+  ]
+}

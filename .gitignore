@@ -4,6 +4,7 @@ work/
 outputs/
 vendor/
 versions/v0.1.*/
+versions/v0.3.0-local/
 LAUNCHER-DIAGNOSIS*.md
 node_modules/
 .runtime/

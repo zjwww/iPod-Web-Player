@@ -1,25 +1,34 @@
 # Third-party notices / 第三方说明
 
-## Public release 0.2.0 / 公开版本
+## Public release 0.3.0 / 公开版本
 
-`dist/player-core.js` and `dist/wheel-player.js` are independently implemented. The public release does not redistribute Apple's original/derived JavaScript, embedded font, click audio, textures or brick game; no Svelte runtime is used. Original code, icons and synthesized media are MIT licensed. Apple, iPod and Apple Music are third-party names/marks; this project is not affiliated with or endorsed by Apple. MIT does not grant trademark rights or rights in historical third-party material.
+Playback, library/imports, click synthesis, test composition, host UI and player drawing code are project-authored, under MIT. The enclosure, materials, curved MENU lettering, transport/battery SVGs and procedural SVG grain were newly written for this release using the approved local appearance as a visual target. This is a replacement implementation, not a claim of clean-room development. No Apple source CSS, original SVG path data, texture bitmap, saved Svelte component, logos or brick game are redistributed.
 
-Earlier experimental versions and original snapshots remain local and ignored by Git. Their historical notices record their provenance. A publicly accessible script was not treated as a redistribution license. Review references: [Apple website terms](https://www.apple.com/legal/internet-services/terms/site.html), [GitHub Pages educational-use requirements](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits#educational-exercises).
+播放、导入曲库、合成按键音／测试音乐、外围界面及播放器绘图代码由本项目编写，按 MIT 分发。机身材质、弧形 MENU、控制／电池 SVG 和程序纹理由本版重新编写，参照用户确认的本地外观；这是替换实现，不宣称为未接触原代码的净室开发。公开版未包含 Apple 原始 CSS、原始 SVG 路径、位图纹理、Svelte 对照组件、标识或打砖块游戏。
 
-公开代码为独立实现，不分发 Apple 原始／衍生脚本、内嵌字体、按键音、纹理或游戏，不依赖 Svelte。原创代码、图标、合成媒体按 MIT 分发，第三方名称及标识不在授权范围。本项目与 Apple 无关联，未获得背书。旧实验版和快照继续本地保留并被 Git 忽略，其历史来源记录保持原样；未将公开可访问视为再分发授权。审查参考以上 Apple 和 GitHub 官方条款。
+Visual reference: [Apple Music web iPod](https://music.apple.com/cn/xp). Public access to the reference was not treated as a redistribution license. Original snapshots, experimental releases and local comparison remain preserved and excluded from GitHub. Apple, iPod and Apple Music are third-party names/marks. This project is not affiliated with or endorsed by Apple; MIT does not grant trademark rights or rights to Apple's historical material. Review: [Apple website terms](https://www.apple.com/legal/internet-services/terms/site.html), [GitHub Pages educational exercises](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits#educational-exercises).
 
-## Noto Sans SC webfont / 中文网页字体
+外观来源见以上链接，未将公开访问视为再分发授权。原始快照、历史实验版及本地对照继续原样保留，不上传。第三方名称及标识不在 MIT 授权范围，本项目与 Apple 无关联，未获背书。
 
-- Upstream: [Google Fonts / Noto Sans SC](https://github.com/google/fonts/tree/2894aab31764f10f29c421bdfd2340d3b382d384/ofl/notosanssc), commit `2894aab31764f10f29c421bdfd2340d3b382d384`.
-- Copyright 2014–2021 Adobe, Reserved Font Name “Source”. SIL Open Font License 1.1; complete license at `versions/v0.2.0/dist/fonts/OFL-NotoSansSC.txt`.
-- Modification: instantiate regular weight 400 and convert to WOFF2, retaining all 30,890 Unicode mappings. Browser-only, no system font installation.
-- WOFF2 SHA-256: `89c8ac4608f8702a7139ee1838544f1e0ba28ed7306e847a8689fd4a6b87f6b9`.
-- Details: `versions/v0.2.0/font-provenance.json`.
+## ChicagoKare
 
-中文字体固定在上述提交，版权归 Adobe，依 SIL OFL 1.1 独立分发，完整许可证随包提供。转换为常规字重 WOFF2，保留全部 Unicode 映射，仅在浏览器使用，不安装系统字体。
+- Source: [KingDuane/Chicago-Kare](https://github.com/KingDuane/Chicago-Kare/tree/dca7a9e4f2b971e39cf3a5e8a3f9309d4293d56d), commit `dca7a9e4f2b971e39cf3a5e8a3f9309d4293d56d`, `ChicagoKare-Regular.woff2`.
+- Copyright (c) 2024 Duane King. The upstream repository provides MIT; complete unmodified license: `versions/v0.3.0/dist/appearance/LICENSE-ChicagoKare-MIT.txt`.
+- The upstream README identifies this as a reproduction of Susan Kare's 1984 Chicago bitmap design. The font name table also records Susan Kare, Duane King and SIL Open Font License (OFL). These bytes and metadata are unchanged; both upstream provenance facts are disclosed rather than replacing the internal notice.
+- Downloaded from the independently licensed upstream, not bundled from the Apple snapshot. 9,400 bytes; SHA-256 `3213740318940270dc4e099b15d49b5781bdf6208660aa970daa5c62d24bcdc4`. No system installation.
 
-## Original test music / 原创测试音乐
+字体直接来自上述独立上游固定提交，按其仓库 MIT 授权保留完整许可证。README 标明复现 Susan Kare 的 1984 Chicago 位图字形；字体内部另有 Susan Kare、Duane King 和 OFL 信息，保持字节不变并同时披露，不篡改内部声明，不将上游字体授权扩大为 Apple 皮肤授权。仅在浏览器加载，不安装系统字体。
 
-`versions/v0.2.0/dist/audio/first-spin.wav`: First Spin / 转动之间, 24 seconds, generated from the original procedural composition in `dist/library.js:createDemo`, with `tools/prepare-pages.cjs`. MIT licensed, no third-party recording or melody sample. Encoding and exact hash are recorded in `audio-provenance.json`.
+## Noto Sans SC
 
-测试音乐为原创程序合成，不包含第三方录音或旋律采样，按 MIT 分发，生成方法、编码及哈希随版本提供。
+- Source: [Google Fonts / Noto Sans SC](https://github.com/google/fonts/tree/2894aab31764f10f29c421bdfd2340d3b382d384/ofl/notosanssc), commit `2894aab31764f10f29c421bdfd2340d3b382d384`.
+- Copyright 2014–2021 Adobe, Reserved Font Name “Source”. SIL OFL 1.1, complete license `versions/v0.3.0/dist/fonts/OFL-NotoSansSC.txt`.
+- Regular weight 400 converted to WOFF2, retaining all 30,890 Unicode mappings. SHA-256 `89c8ac4608f8702a7139ee1838544f1e0ba28ed7306e847a8689fd4a6b87f6b9`. Details in `versions/v0.3.0/font-provenance.json`. No system installation.
+
+中文字体版权归 Adobe，依独立 OFL 1.1 分发，完整许可证随包提供。转换为常规字重 WOFF2，保留全部 Unicode 映射，来源／转换哈希见版本记录。
+
+## Original media and asset inventory / 原创媒体及素材清单
+
+`versions/v0.3.0/dist/audio/first-spin.wav`: First Spin / 转动之间, 24 seconds, original procedural composition in `versions/v0.3.0/dist/library.js:createDemo`, generated by `tools/prepare-pages.cjs`, MIT. No third-party recording or melody sample. Click samples are also original; the same sample is sent to both channels. Original icons, vector artwork and procedural grain use MIT. Exact asset hashes, licenses and modifications are recorded in `versions/v0.3.0/asset-provenance.json`; audio encoding is in `versions/v0.3.0/audio-provenance.json`.
+
+测试音乐为原创程序合成，不含第三方录音或旋律采样，按 MIT 分发；按键音也是原创，左右声道使用同一份采样。原创图标、矢量绘图及程序纹理均使用 MIT。完整素材来源、许可证、修改及哈希见 `versions/v0.3.0/asset-provenance.json`，音频编码见 `versions/v0.3.0/audio-provenance.json`。

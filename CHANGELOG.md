@@ -2,6 +2,12 @@
 
 [简体中文](CHANGELOG.zh-CN.md)
 
+## 0.3.0 — 2026-10-27
+
+- Preserve the approved visual presentation with newly authored enclosure/material drawings, curved MENU, battery/transport vectors and procedural grain; retain 0.9 desktop scale, screen ink/type and reflection with immersive overflow guards.
+- Bundle unchanged ChicagoKare from its pinned MIT upstream; retain Noto SC OFL, original music and identical playback core. Add in-app credits, source/license/hash inventory and publication checks. Apple source skin, texture and private comparison remain local.
+- Update Pages/cache to 0.3.0 and retain all previous directories/archives. Local instruction files stay excluded. New real-device iOS verification is not implied by earlier 0.2.0 feedback.
+
 ## Post-release verification — 2026-10-26 (0.2.0)
 
 - User-reported real-device result: Safari on iOS 27.0.1 plays the included test music normally. Device model was not supplied; Home Screen installation, touch-wheel interaction, offline and lock-screen/background playback were not part of this confirmation.

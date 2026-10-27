@@ -1,0 +1,18 @@
+{
+  "source_url": "https://raw.githubusercontent.com/google/fonts/2894aab31764f10f29c421bdfd2340d3b382d384/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf",
+  "commit": "2894aab31764f10f29c421bdfd2340d3b382d384",
+  "license": "SIL Open Font License 1.1",
+  "original_sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+  "webfont_sha256": "89c8ac4608f8702a7139ee1838544f1e0ba28ed7306e847a8689fd4a6b87f6b9",
+  "webfont_bytes": 4192980,
+  "unicode_mappings": 30890,
+  "weight": 400,
+  "modification": "Instantiate regular weight and convert to WOFF2; retain all Unicode mappings.",
+  "metrics": {
+    "units_per_em": 1000,
+    "ascent": 1160,
+    "descent": -288
+  },
+  "required_ui_glyphs_missing": [],
+  "system_font_installation": false
+}

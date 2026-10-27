@@ -15,11 +15,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - name: Verify playback, library, themes, catalog and offline ranges
-        run: node --test versions/v0.2.0/tests/*.test.cjs
+        run: node --test versions/v0.3.0/tests/*.test.cjs
       - name: Audit public files
-        run: node versions/v0.2.0/tools/audit-release.cjs --tracked
+        run: node versions/v0.3.0/tools/audit-release.cjs --tracked
       - name: Assemble static website
-        run: node versions/v0.2.0/tools/build-pages.cjs
+        run: node versions/v0.3.0/tools/build-pages.cjs
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Upload website
